@@ -9,8 +9,8 @@ import dagger.Module
 /*class HawaiianPizzaModule
 {
     @Provides  ///=======this to be changed to binds
-    fun provideToppings(hawaiianPizz: HawaiianPizza): Toppings {
-        return hawaiianPizz
+    fun provideToppings(hawaiianPizza: HawaiianPizza): Toppings {
+        return hawaiianPizza
     }
 }*/
 //Changing the above to below for binding purpose

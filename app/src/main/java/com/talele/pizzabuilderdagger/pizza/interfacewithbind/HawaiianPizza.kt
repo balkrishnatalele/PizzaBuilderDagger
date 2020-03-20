@@ -5,8 +5,8 @@ import javax.inject.Inject
 
 class HawaiianPizza @Inject constructor(): Toppings
 {
-    override fun specialToppings() {
+    override fun specialToppings()
+    {
         Log.d("MSG","HawaiianPizza toppings")
     }
-
 }
