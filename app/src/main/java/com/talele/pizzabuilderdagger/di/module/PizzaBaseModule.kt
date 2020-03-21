@@ -29,7 +29,12 @@ class PizzaBaseModule
         return Yest()
     }
     @Provides
-    fun providePizzaBase(flour: Flour, sugarAndSalt: SugarAndSalt, yest: Yest): PizzaBase {
-        return PizzaBase(flour,yest,sugarAndSalt)
+    fun provideSugarAndSalt() : SugarAndSalt
+    {
+        return SugarAndSalt()
+    }
+    @Provides
+    fun providePizzaBase(flour: Flour, sugarAndSalt: SugarAndSalt, yest: Yest, oilAndWater: OilAndWater): PizzaBase {
+        return PizzaBase(flour,yest,sugarAndSalt, oilAndWater)
     }
 }
